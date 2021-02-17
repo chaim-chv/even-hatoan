@@ -1,5 +1,4 @@
 const express = require('express')
-const Fetch = require('node-fetch')
 const bodyParser = require('body-parser')
 const dburl = process.env.JAWSDB_URL
 
