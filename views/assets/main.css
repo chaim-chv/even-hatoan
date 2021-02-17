@@ -1,0 +1,80 @@
+body {
+  direction: rtl;
+  font-family: Arimo;
+}
+.main-outer {
+  display: grid;
+  justify-content: center;
+}
+.account-div {
+  position: fixed;
+}
+.two-options-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.option {
+  width: 90vh;
+  height: 90vh;
+  float: left;
+  margin-right: 20px;
+  background-color: green;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out;
+}
+.option:hover {
+  background-color: rgb(25, 94, 45);
+}
+.choices {
+  text-align: center;
+  font-size: 3em;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  margin: 0 10px 0 10px;
+  width: 40vh;
+  height: 30px;
+  text-align: center;
+  border: green 3px solid;
+  border-radius: 3px;
+}
+.title {
+  text-align: center;
+  font-size: 4em;
+}
+button {
+  margin-top: 15px;
+  height: 50px;
+  background-color: green;
+  color: wheat;
+  font-size: 15px;
+  font-size-adjust: 1;
+  font-weight: 600;
+  border: rgb(63, 7, 7) solid 3px;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: rgb(14, 77, 14);
+}
+.item {
+  border: black solid 2px;
+  border-radius: 2px;
+  text-align: center;
+  padding: 10px;
+  width: max-content;
+}
+.results {
+  display: grid;
+  justify-items: center;
+}
