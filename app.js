@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const dburl = process.env.JAWSDB_URL || 'mysql://mynhnzndd1rt32z8:jeipo2qiiu3ekvjf@d3y0lbg7abxmbuoi.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/ncxccpuf61clezul'
+const dburl = process.env.JAWSDB_URL
 
 const mysql = require('mysql')
 
