@@ -110,7 +110,7 @@ db.query(`SHOW TABLES LIKE 'users'`, function (error, results) {
   if (results.length == 0) {
     console.log("DB check: users table not found, create it now...");
     db.query(
-      "CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, nickname VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, hash VARCHAR(255) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)",
+      `CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, nickname VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, hash VARCHAR(255) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)`,
       function (error, results) {
         console.log(results, error);
       }
