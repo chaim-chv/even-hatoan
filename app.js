@@ -82,7 +82,7 @@ db.query(`SHOW TABLES LIKE 'founds'`, function (error, results) {
   if (results.length == 0) {
     console.log("DB check: founds table not found, create it now...");
     db.query(
-      `CREATE TABLE founds (id INT AUTO_INCREMENT PRIMARY KEY, found_date DATE, status TINYINT NOT NULL DEFAULT 1, description TEXT, category VARCHAR(255), city VARCHAR(255) NOT NULL, userid INT, email VARCHAR(255), phone VARCHAR(255), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)`,
+      `CREATE TABLE founds (id INT AUTO_INCREMENT PRIMARY KEY, item VARCHAR(255) NOT NULL,found_date DATE, status TINYINT NOT NULL DEFAULT 1, description TEXT, category VARCHAR(255), city VARCHAR(255) NOT NULL, userid INT, email VARCHAR(255), phone VARCHAR(255), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)`,
       function (error, results) {
         console.log(results, error);
       }
@@ -96,7 +96,7 @@ db.query(`SHOW TABLES LIKE 'losts'`, function (error, results) {
   if (results.length == 0) {
     console.log("DB check: losts table not found, create it now...");
     db.query(
-      `CREATE TABLE losts (id INT AUTO_INCREMENT PRIMARY KEY, found_date DATE, status TINYINT NOT NULL DEFAULT 1, description TEXT, category VARCHAR(255), city VARCHAR(255) NOT NULL, userid INT, email VARCHAR(255), phone VARCHAR(255), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)`,
+      `CREATE TABLE losts (id INT AUTO_INCREMENT PRIMARY KEY, item VARCHAR(255) NOT NULL, found_date DATE, status TINYINT NOT NULL DEFAULT 1, description TEXT, category VARCHAR(255), city VARCHAR(255) NOT NULL, userid INT, email VARCHAR(255), phone VARCHAR(255), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)`,
       function (error, results) {
         console.log(results, error);
       }
