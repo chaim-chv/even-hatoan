@@ -37,7 +37,7 @@ app.post('/data/lost', async function (req, res) {
     if ((item == '') || (!item)) { item = '%' }
     if ((category == '') || (!category)) { category = '%' }
     console.log(`got request. city is ${city} item is ${item} category is ${category}`)
-    db.query(`SELECT * FROM founds WHERE id LIKE '${id}' category LIKE '${category}' AND item LIKE '%${item}%' AND city LIKE '${city}' AND status = 1`, function (error, results, fields) {
+    db.query(`SELECT * FROM founds WHERE id LIKE '${id}' category LIKE '${category}' AND item LIKE '%${item}%' AND city LIKE '${city}' AND status = '1'`, function (error, results, fields) {
       if (error) console.log(error);
       console.log(results)
       if (!results[0]) {
